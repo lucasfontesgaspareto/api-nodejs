@@ -1,19 +1,13 @@
 'use strict'
 
 const express = require('express');
-const app = express();
-const PORT = 3000;
+const consign = require('consign');
 
-app.get('/', (req, res) => res.json({status: "nodeapi"}));
+let app = express();
 
-app.get('/tasks', (req, res) => {
-   res.json({
-       tasks: [{
-           title: "Fazer compras"
-       }, {
-           title: "Consertar o pc"
-       }]
-   });
-});
-
-app.listen(PORT, () => console.log(`Connection on ${PORT}`));
+consign()
+    .include('models')
+    .then('libs/middlewares.js')
+    .then('routes')
+    .then('libs/boot.js')
+    .into(app);
