@@ -1,0 +1,19 @@
+{
+  "name": "nodeapi",
+  "version": "1.0.0",
+  "description": "NodeJA API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devgaspa/nodeapi.git"
+  },
+  "author": "devgaspa <devgaspa@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devgaspa/nodeapi/issues"
+  },
+  "homepage": "https://github.com/devgaspa/nodeapi#readme"
+}
