@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/devgaspa/nodeapi/issues"
   },
-  "homepage": "https://github.com/devgaspa/nodeapi#readme"
+  "homepage": "https://github.com/devgaspa/nodeapi#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
 }
