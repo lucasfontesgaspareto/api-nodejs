@@ -8,5 +8,9 @@ module.exports = {
         define: {
             underscored: true
         }
+    },
+    jwtSecret: "APP_TEST",
+    jwtSession: {
+        session: false
     }
 };
