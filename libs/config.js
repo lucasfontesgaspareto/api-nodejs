@@ -1,16 +1,10 @@
-module.exports = {
-    database: 'nodeapi',
-    username: '',
-    password: '',
-    params: {
-        dialect: 'sqlite',
-        storage: 'nodeapi.sqlite',
-        define: {
-            underscored: true
-        }
-    },
-    jwtSecret: "APP_TEST",
-    jwtSession: {
-        session: false
+'use strict';
+
+module.exports = app => {
+    const env = process.env.NODE_ENV;
+    if(Boolean(env)) {
+        return require(`./config.${env}.js`);
     }
+    
+    return require('./config.developmente.js');
 };
