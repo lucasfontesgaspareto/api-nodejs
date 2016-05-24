@@ -11,6 +11,6 @@ module.exports = {
     },
     jwtSecret: "APP_TEST",
     jwtSession: {
-        session: true
+        session: false
     }
 };

@@ -1,21 +1,21 @@
-# Project NodeAPI: API RESTful created with NodeJS.
+## Project NodeAPI: API RESTful created with NodeJS.
 
 ###Resources###
 
-* Tasks
-    * GET:
-        * /tasks: Find all tasks
-        * /tasks/id: Find a task
-    * POST:
-        * /tasks: Create a task
-    * PUT:
-        * /tasks/id: Update a task
-    * DELETE:
-        * /tasks/id: Delete a task
-* Users
-    * GET:
-        * /users/id: Find an user
-    * DELETE:
-        * /users/id: Delete an user
-    * POST:
-        * /users: Create an user
+Routes: Index
+    GET /
+
+  Routes: Tasks
+    GET /tasks
+    POST /tasks
+    GET /tasks/:id
+    PUT /tasks/:id
+    DELETE /tasks/:id
+
+  Routes: Token
+    POST /token
+    
+  Routes: Users
+    GET /user
+    DELETE /user
+    POST /users
