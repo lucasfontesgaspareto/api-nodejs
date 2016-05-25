@@ -1,21 +1,9 @@
 ## Project NodeAPI: API RESTful created with NodeJS.
 
-###Resources###
+###v1.0.0
 
-Routes: Index
-    GET /
+Run command "npm start" and see this simple but amazing api restful working.
 
-  Routes: Tasks
-    GET /tasks
-    POST /tasks
-    GET /tasks/:id
-    PUT /tasks/:id
-    DELETE /tasks/:id
+Docs: After run "npm start" on localhost/3000, access localhost:3000/public and see docs.
 
-  Routes: Token
-    POST /token
-    
-  Routes: Users
-    GET /user
-    DELETE /user
-    POST /users
+Contact: devgaspa@gmail.com
