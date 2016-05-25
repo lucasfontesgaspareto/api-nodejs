@@ -2,6 +2,7 @@
 
 const bodyParser = require('body-parser');
 const multer = require('multer');
+const express = require('express');
 
 let upload = multer();
 
@@ -15,4 +16,5 @@ module.exports = app => {
         delete req.body.id;
         next();  
     });
+    app.use(express.static('public'));
 };
