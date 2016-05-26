@@ -1,9 +1,10 @@
-## Project NodeAPI: API RESTful created with NodeJS.
+## API RESTful desenvolvida usando NodeJS
 
-###v1.0.0
+A API foi desenvolvida a partir dE um livro.
 
-Run command "npm start" and see this simple but amazing api restful working.
+Titulo: Construindo APIs REST com Node.js.
+Autor: Cario Ribeiro Pereira.
+ISBN: 
+Editora: Casa do Código.
 
-Docs: After run "npm start" on localhost/3000, access localhost:3000/public and see docs.
-
-Contact: devgaspa@gmail.com
+Este projeto vai até o fim do desenvolvimento da API, não prossegue a partir da criação do cliente.
