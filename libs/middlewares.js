@@ -6,6 +6,7 @@ const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
 const logger = require('./logger.js');
+const compression = require('compression');
 
 let upload = multer();
 
@@ -24,6 +25,7 @@ module.exports = app => {
         methods: ['GET', 'POST', 'PUT', 'DELETE'],
         allowedHeaders: ['Content-Type', 'Authorization']
     }));
+    app.use(compression());
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: true }));
     app.use(app.auth.initialize());
